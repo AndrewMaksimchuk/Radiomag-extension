@@ -1,0 +1,54 @@
+body {
+	background-color: #003366; /* колір фона головної сторінки */
+	background-image: url("noise_2.png"); /*установка текстури для фона */
+}
+
+input.hidden {
+    display: none;
+}
+
+form, body {
+	width: 173px;
+}
+
+a {
+	text-decoration: none;
+	margin: 0px;
+}
+
+h4, h5, h6 {
+	margin: 0px;
+	padding: 1px;
+	color: #ffffff;
+	text-align: center;
+
+}
+
+div:hover {
+	background-color: #cc0000;
+}
+
+input {
+	display: block;
+	margin: auto;
+}
+
+#length_power {
+	width: 88px;
+}
+
+.baton {
+
+}
+
+.tooltip_icon {
+	visibility: hidden;
+	width: 15px;
+	height: 15px;
+}
+
+.baton:hover .tooltip_icon {
+    visibility: visible;
+}
+
+/* Коментарій */

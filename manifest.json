@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "РАДІОМАГ - магазин електронних компонентів!",
+  "description": "Інтернет магазин радіодеталей №1 в Україні. Телефони: +38(044)220-11-80, +38(068)838-13-18, +38(098)62-332-62 e-mail: sales@radiomag.com.ua",
+  "version": "1.0",
+  
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "browser_action": {
+    "default_icon": "favicons.png",
+    "default_popup": "index.html",
+    "default_title": "Тицнюти сюди!"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
+
