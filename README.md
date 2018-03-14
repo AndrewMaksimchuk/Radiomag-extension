@@ -1,2 +1,2 @@
 # Radiomag-extension
-Extension for the online store
+Browser extension for the online store.
