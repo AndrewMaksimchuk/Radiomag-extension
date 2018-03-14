@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("rect3798").addEventListener("click", color_change_second_strip);
   document.getElementById("rect3800").addEventListener("click", multiplier);
   document.getElementById("rect3819").addEventListener("click", tolerance);
+  document.getElementById("length_power").addEventListener("input", power_res);
 });
 //Функція зміни кольорів для 1-ї полоски
 function color_change_first_strip(){
@@ -128,6 +129,7 @@ function power_res() {
 	else if (input_length >= 18) {
 		power_res_nominal = ""
 	}
+	input_resistance();
 }
 
 //Функція вставки номінала резистора для пошуку
