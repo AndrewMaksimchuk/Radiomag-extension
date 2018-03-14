@@ -108,22 +108,22 @@ function power_res() {
 		power_res_nominal = ""
 	}
 	else if (input_length > 0 && input_length < 6) {
-		power_res_nominal = "0,25 W"
+		power_res_nominal = "0,25W"
 	}
 	else if (input_length >= 6 && input_length < 8.5) {
-		power_res_nominal = "0,5 W"
+		power_res_nominal = "0,5W"
 	}
 	else if (input_length >= 8.5 && input_length < 10) {
-		power_res_nominal = "1 W"
+		power_res_nominal = "1W"
 	}
 	else if (input_length >= 10 && input_length < 14) {
-		power_res_nominal = "2 W"
+		power_res_nominal = "2W"
 	}
 	else if (input_length >= 14 && input_length < 16) {
-		power_res_nominal = "3 W"
+		power_res_nominal = "3W"
 	}
 	else if (input_length >= 16 && input_length < 18) {
-		power_res_nominal = "5 W"
+		power_res_nominal = "5W"
 	}
 	else if (input_length >= 18) {
 		power_res_nominal = ""
