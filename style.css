@@ -37,18 +37,4 @@ input {
 	width: 88px;
 }
 
-.baton {
-
-}
-
-.tooltip_icon {
-	visibility: hidden;
-	width: 15px;
-	height: 15px;
-}
-
-.baton:hover .tooltip_icon {
-    visibility: visible;
-}
-
 /* Коментарій */
