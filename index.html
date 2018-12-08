@@ -3,16 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="popup.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/popup.js" defer></script>
 </head>
-<body >
+<body>
 
-<form  name="SearchForm" method="get" action="https://www.rcscomponents.kiev.ua/modules.php" enctype="text/plain" accept-charset="UTF-8" target="_blank">
-    <input class="hidden" type="submit" name="name" value="Пошук">
-          <input class="hidden" type="text" id="searchwindow" name="name" value="Asers_Shop">
-          <input class="hidden" type="text" id="searchwindow" name="s_op" value="search">
-          <input class="hidden" type="text" id="searchwindow" name="stock_only" value="1">
-          <input type="text" id="searchwindow" name="query" placeholder="Пошук" value="">   
+<form action="">
+    <input type="text" id="searchWindow" placeholder="Пошук" autofocus>
 </form>
 
 <hr>
@@ -27,9 +24,11 @@
 		</div>
 <hr>
 
+  <div class="baton">
+  <a href="https://www.rcscomponents.kiev.ua/catalog/diodnye-mosty/516" target="_blank"><h5>Діодні мости</h5></a>
+  </div>
 	<div class="baton">
 	<a href="https://www.rcscomponents.kiev.ua/catalog/diody-shottki/451#!page=1" target="_blank"><h5>Діоди Шотткі</h5></a>
-   <!-- <img src="raw materials/diode.svg" class="tooltip_icon"> -->
 	</div>
     <div class="baton">
   <a href="https://www.rcscomponents.kiev.ua/catalog/diody-superbystrye/450#!page=1" target="_blank"><h5>Діоди швидкі</h5></a>
@@ -43,17 +42,14 @@
 		<div class="baton">
 	<a href="https://www.rcscomponents.kiev.ua/catalog/stabilitrony/424#!page=1" target="_blank"><h5>Стабілітрони</h5></a>
 	</div>
+    <div class="baton">
+  <a href="https://www.rcscomponents.kiev.ua/catalog/stabilizatory-napryazheniya-linejnye/97#!page=1" target="_blank"><h5>Стабілізатори лінійні</h5></a>
+  </div>
+    <div class="baton">
+  <a href="https://www.rcscomponents.kiev.ua/catalog/bipolyarnye-npn/157#!page=1" target="_blank"><h5>Транзистори біполярні NPN</h5></a>
+  </div>
 		<div class="baton">
 	<a href="https://www.rcscomponents.kiev.ua/catalog/polevye-n-kanalnye/159#!page=1" target="_blank"><h5>Транзистори польові N канальні</h5></a>
-	</div>
-		<div class="baton">
-	<a href="https://www.rcscomponents.kiev.ua/catalog/bipolyarnye-npn/157#!page=1" target="_blank"><h5>Транзистори біполярні NPN</h5></a>
-	</div>
-		<div class="baton">
-	<a href="https://www.rcscomponents.kiev.ua/catalog/stabilizatory-napryazheniya-linejnye/97#!page=1" target="_blank"><h5>Стабілізатори лінійні</h5></a>
-	</div>
-		<div class="baton">
-	<a href="https://www.rcscomponents.kiev.ua/catalog/stabilizatory-napryazheniya-impulsnye/489#!page=1" target="_blank"><h5>Стабілізатори імпульсні</h5></a>
 	</div>
     <div class="baton">
 	<a href="https://www.rcscomponents.kiev.ua/catalog/logika/90#!page=1" target="_blank"><h5>Логіка</h5></a>
@@ -343,12 +339,9 @@
 
 <h4 id="resistor_resistance_output">0 Ohm ±5%</h4>
 
-<form  method="get" action="https://www.rcscomponents.kiev.ua/modules.php" enctype="text/plain" accept-charset="UTF-8" target="_blank">
-          <input type="submit" value="Пошук!">
-          <input class="hidden" type="text" name="name" value="Asers_Shop">
-          <input class="hidden" type="text" name="s_op" value="search">
-          <input class="hidden" type="text" name="stock_only" value="1">
-          <input class="hidden" id="input_resistor_resistance" type="text" name="query" value="">
+<form action="">
+    <input class="hidden" id="input_resistor_resistance" type="text">
+    <input type="button" id="resistorSearch" value="Пошук!">
 </form>
 
 </body>
