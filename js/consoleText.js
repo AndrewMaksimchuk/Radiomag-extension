@@ -78,7 +78,8 @@ function getTarget(event) {
     let temp = targetContent.split(":");
     let productCode = parseInt(temp[1].trim());
     //Copi to clipboard
-    if (temp[0].search("код товара") >= 0 || temp[0].search("код товару") >= 0) {
+    const searchRow = temp[0].toLowerCase();
+    if (searchRow.search("код товара") >= 0 || searchRow.search("код товару") >= 0) {
         navigator.clipboard.writeText(productCode)
             .then(() => {
                 //Тут створити вікно з текстом "Код товара копійовано!" над місцем де натиснута клавіша мишки
@@ -107,7 +108,7 @@ function getTarget(event) {
                     box.parentNode.removeChild(box);
                     triangle.parentNode.removeChild(triangle)
                 }, 1000);
-                console.log('Text copied to clipboard');
+                console.log('Text copied to clipboard: ' + productCode);
             })
             .catch(err => {
                 // This can happen if the user denies clipboard permissions:
