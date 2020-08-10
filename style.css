@@ -9,6 +9,10 @@ body {
 	background-image: url("img/noise_2.png"); /*установка текстури для фона */
 }
 
+.center {
+	text-align: center;
+}
+
 input.hidden {
     display: none;
 }
@@ -25,7 +29,6 @@ a {
 h4, h5, h6 {
 	margin: 0px;
 	padding: 1px;
-	text-align: center;
 /*    Основний постійний колір шрифтів - білий*/
 	color: var(--main-color); 
 }
